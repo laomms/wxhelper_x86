@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\account_mgr.cc" />
+    <ClCompile Include="src\base_mgr.cc" />
+    <ClCompile Include="src\chat_room_mgr.cc" />
+    <ClCompile Include="src\config.cc" />
+    <ClCompile Include="src\contact_mgr.cc" />
+    <ClCompile Include="src\db.cc" />
+    <ClCompile Include="src\dllMain.cc" />
+    <ClCompile Include="src\global_context.cc" />
+    <ClCompile Include="src\hide_module.cc" />
+    <ClCompile Include="src\hooks.cc" />
+    <ClCompile Include="src\http_client.cc" />
+    <ClCompile Include="src\http_handler.cc" />
+    <ClCompile Include="src\http_server.cc" />
+    <ClCompile Include="src\log.cc" />
+    <ClCompile Include="src\misc_mgr.cc" />
+    <ClCompile Include="src\send_message_mgr.cc" />
+    <ClCompile Include="src\sns_mgr.cc" />
+    <ClCompile Include="src\thread_pool.cc" />
+    <ClCompile Include="src\utils.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\account_mgr.h" />
+    <ClInclude Include="inc\api_route.h" />
+    <ClInclude Include="inc\base64.h" />
+    <ClInclude Include="inc\base_mgr.h" />
+    <ClInclude Include="inc\chat_room_mgr.h" />
+    <ClInclude Include="inc\config.h" />
+    <ClInclude Include="inc\contact_mgr.h" />
+    <ClInclude Include="inc\db.h" />
+    <ClInclude Include="inc\detours.h" />
+    <ClInclude Include="inc\framework.h" />
+    <ClInclude Include="inc\global_context.h" />
+    <ClInclude Include="inc\handler.h" />
+    <ClInclude Include="inc\hide_module.h" />
+    <ClInclude Include="inc\hooks.h" />
+    <ClInclude Include="inc\http_client.h" />
+    <ClInclude Include="inc\http_handler.h" />
+    <ClInclude Include="inc\http_router.h" />
+    <ClInclude Include="inc\http_server.h" />
+    <ClInclude Include="inc\json_utils.h" />
+    <ClInclude Include="inc\log.h" />
+    <ClInclude Include="inc\lz4.h" />
+    <ClInclude Include="inc\misc_mgr.h" />
+    <ClInclude Include="inc\mongoose.h" />
+    <ClInclude Include="inc\new_sqlite3.h" />
+    <ClInclude Include="inc\noncopyable.h" />
+    <ClInclude Include="inc\send_message_mgr.h" />
+    <ClInclude Include="inc\singleton.h" />
+    <ClInclude Include="inc\sns_mgr.h" />
+    <ClInclude Include="inc\thread_pool.h" />
+    <ClInclude Include="inc\tinyxml2.h" />
+    <ClInclude Include="inc\utils.h" />
+    <ClInclude Include="inc\wechat_function.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="wxhelper.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectName>wxhelper</ProjectName>
+    <ProjectGuid>{40818871-0BD0-4363-B5C3-198F3CEF6CC0}</ProjectGuid>
+    <RootNamespace>wxhelper</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.34714.143</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <ExternalIncludePath>$(ProjectDir)\inc;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>$(ProjectDir)\lib\debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)\inc;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)\lib\release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl />
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>base64.lib;detours.lib;lz4.lib;mongoose.lib;spdlog.lib;tinyxml2.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl />
+    <ClCompile>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WECHAT_VERSION=391125;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <AdditionalDependencies>base.lib;base64.lib;detours.lib;lz4.lib;mongoose.lib;spdlog.lib;tinyxml2.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
