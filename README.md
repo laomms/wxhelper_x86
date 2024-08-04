@@ -237,4 +237,4 @@ https://github.com/ttttupup/wxhelper  重编译版
 #define WX_HOOK_VOICE_NEXT_OFFSET 0x203d130
 #define WX_SELF_ID_OFFSET 0x2FFD484  
 
-```j
+```
