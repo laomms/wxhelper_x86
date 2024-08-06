@@ -16,10 +16,10 @@
 #include <fcntl.h>
 #include "Windows.h"
 #include "utils.h"
-#include "spdlog/spdlog.h"
-#include "spdlog/sinks/rotating_file_sink.h"
-#include "spdlog/sinks/daily_file_sink.h"
-#include "spdlog/sinks/stdout_color_sinks.h"
+#include "spdlog.h"
+#include "sinks/rotating_file_sink.h"
+#include "sinks/daily_file_sink.h"
+#include "sinks/stdout_color_sinks.h"
 
 
 #endif // PCH_H

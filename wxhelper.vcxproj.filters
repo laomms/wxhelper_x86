@@ -83,9 +83,6 @@
     <ClInclude Include="inc\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="inc\detours.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="inc\http_client.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -93,27 +90,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="inc\http_server.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="inc\json_utils.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="inc\mongoose.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="inc\noncopyable.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="inc\singleton.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="inc\thread_pool.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="inc\tinyxml2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="inc\utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="inc\wechat_function.h">
@@ -161,9 +137,6 @@
     <ClInclude Include="inc\http_handler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="inc\lz4.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="inc\misc_mgr.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -171,6 +144,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="inc\send_message_mgr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\singleton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\thread_pool.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

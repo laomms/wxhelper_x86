@@ -4,7 +4,7 @@
 #include "mongoose.h"
 #include <vector>
 #include <string>
-#include <nlohmann/json.hpp>
+#include <json.hpp>
 namespace wxhelper {
 class HttpHandler : public Handler {
  public:

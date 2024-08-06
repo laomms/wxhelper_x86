@@ -40,7 +40,6 @@
     <ClInclude Include="inc\config.h" />
     <ClInclude Include="inc\contact_mgr.h" />
     <ClInclude Include="inc\db.h" />
-    <ClInclude Include="inc\detours.h" />
     <ClInclude Include="inc\framework.h" />
     <ClInclude Include="inc\global_context.h" />
     <ClInclude Include="inc\handler.h" />
@@ -50,18 +49,13 @@
     <ClInclude Include="inc\http_handler.h" />
     <ClInclude Include="inc\http_router.h" />
     <ClInclude Include="inc\http_server.h" />
-    <ClInclude Include="inc\json_utils.h" />
     <ClInclude Include="inc\log.h" />
-    <ClInclude Include="inc\lz4.h" />
     <ClInclude Include="inc\misc_mgr.h" />
-    <ClInclude Include="inc\mongoose.h" />
     <ClInclude Include="inc\new_sqlite3.h" />
-    <ClInclude Include="inc\noncopyable.h" />
     <ClInclude Include="inc\send_message_mgr.h" />
     <ClInclude Include="inc\singleton.h" />
     <ClInclude Include="inc\sns_mgr.h" />
     <ClInclude Include="inc\thread_pool.h" />
-    <ClInclude Include="inc\tinyxml2.h" />
     <ClInclude Include="inc\utils.h" />
     <ClInclude Include="inc\wechat_function.h" />
     <ClInclude Include="resource.h" />
@@ -124,7 +118,7 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>inc\spdlog\include;inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>inc\nlohmann;inc\base64;inc\lz4;inc\mongoose;inc\tinyxml2;inc\Detours;inc\spdlog;inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -147,7 +141,7 @@
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>inc\spdlog\include;inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>inc\nlohmann;inc\base64;inc\lz4;inc\mongoose;inc\tinyxml2;inc\Detours;inc\spdlog;inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
