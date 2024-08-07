@@ -1,5 +1,5 @@
 https://github.com/ttttupup/wxhelper  重编译版   
-适用于3.9.2.23 [download] (https://github.com/tom-snow/wechat-windows-versions/releases/download/v3.9.2.23/WeChatSetup-3.9.2.23.exe)
+适用于3.9.2.23 [download](https://github.com/tom-snow/wechat-windows-versions/releases/download/v3.9.2.23/WeChatSetup-3.9.2.23.exe)
 
 ```c++
 // snsDataMgr
