@@ -1,0 +1,1275 @@
+{
+  "name": "Wechat Hook 39223",
+  "version": "1",
+  "items": [
+    {
+      "type": "http",
+      "name": "checkLogin",
+      "seq": 1,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=0",
+        "method": "POST",
+        "headers": [],
+        "params": [
+          {
+            "name": "type",
+            "value": "0",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "confirmReceipt",
+      "seq": 36,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=45",
+        "method": "POST",
+        "headers": [],
+        "params": [
+          {
+            "name": "type",
+            "value": "45",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{\n    \"wxid\": \"wxid_123456\",\n    \"transcationId\": \"transcationid\",\n    \"transferId\": \"transferId\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "decodeImage",
+      "seq": 33,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=48",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "enabled": true
+          }
+        ],
+        "params": [
+          {
+            "name": "type",
+            "value": "48",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{\"imagePath\": \"C:\\\\Users\\\\PC_User\\\\Documents\\\\WeChat Files\\\\wxid_123456\\\\FileStorage\\\\MsgAttach\\\\02b8ef0b3d43746a241dbee50198c4aa\\\\Image\\\\2024-08\\\\043a413621d81eb896b01b2ee85aced3.dat\",\"savePath\": \"D:\\\\picDir\"}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "downloadAttach",
+      "seq": 32,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=56",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "enabled": true
+          }
+        ],
+        "params": [
+          {
+            "name": "type",
+            "value": "56",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{\"msgId\": 123}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "execSql",
+      "seq": 10,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=34",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "enabled": true
+          }
+        ],
+        "params": [
+          {
+            "name": "type",
+            "value": "34",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{\"dbHandle\": 1713425147584,\"sql\": \"select * from MSG where localId =100;\"}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "forwardMsg",
+      "seq": 23,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=40",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "enabled": true
+          }
+        ],
+        "params": [
+          {
+            "name": "type",
+            "value": "40",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{\"wxid\": \"filehelper\",\"msgId\": \"12331\"}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "getChatRoomDetailInfo",
+      "seq": 11,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=47",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "enabled": true
+          }
+        ],
+        "params": [
+          {
+            "name": "type",
+            "value": "47",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{\"chatRoomId\": \"123333@chatroom\"}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "getContactList",
+      "seq": 8,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=46",
+        "method": "POST",
+        "headers": [],
+        "params": [
+          {
+            "name": "type",
+            "value": "46",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "text",
+          "text": "{}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "getContactProfile",
+      "seq": 28,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=57",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "enabled": true
+          }
+        ],
+        "params": [
+          {
+            "name": "type",
+            "value": "57",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{\"wxid\": \"wxid_123\"}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "getDBInfo",
+      "seq": 9,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=32",
+        "method": "POST",
+        "headers": [],
+        "params": [
+          {
+            "name": "type",
+            "value": "32",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "text",
+          "text": "{}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "getMemberFromChatRoom",
+      "seq": 18,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=25",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "enabled": true
+          }
+        ],
+        "params": [
+          {
+            "name": "type",
+            "value": "25",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{\"chatRoomId\": \"123@chatroom\"}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "getSNSFirstPage",
+      "seq": 24,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=53",
+        "method": "POST",
+        "headers": [],
+        "params": [
+          {
+            "name": "type",
+            "value": "53",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "getSNSNextPage",
+      "seq": 25,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=54",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "enabled": true
+          }
+        ],
+        "params": [
+          {
+            "name": "type",
+            "value": "54",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{\"snsId\": \"snsId\"}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "hookLog",
+      "seq": 19,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=36",
+        "method": "POST",
+        "headers": [],
+        "params": [
+          {
+            "name": "type",
+            "value": "36",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "text",
+          "text": "{}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "hookSyncMsg",
+      "seq": 6,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=9",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "enabled": true
+          }
+        ],
+        "params": [
+          {
+            "name": "type",
+            "value": "9",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{\"port\": \"19099\",\"ip\": \"127.0.0.1\",\"url\": \"http://localhost:8080\",\"timeout\": \"3000\",\"enableHttp\": \"0\"}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "removeTopMsg",
+      "seq": 17,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=52",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "enabled": true
+          }
+        ],
+        "params": [
+          {
+            "name": "type",
+            "value": "52",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{\"wxid\": 1222222, \"msgid\": 123}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "sendAtText",
+      "seq": 29,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=3",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "enabled": true
+          }
+        ],
+        "params": [
+          {
+            "name": "type",
+            "value": "3",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{\"wxids\": \"notify@all\",\"chatRoomId\": \"123@chatroom\",\"msg\": \"你好啊\"}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "sendFileMsg",
+      "seq": 5,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=6",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "enabled": true
+          }
+        ],
+        "params": [
+          {
+            "name": "type",
+            "value": "6",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{\"wxid\": \"filehelper\",\"filePath\": \"C:\\\\test.zip\"}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "sendImagesMsg",
+      "seq": 4,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=5",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "enabled": true
+          }
+        ],
+        "params": [
+          {
+            "name": "type",
+            "value": "5",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{\"wxid\": \"filehelper\",\"imagePath\": \"C:\\\\pic.png\"}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "sendTextMsg",
+      "seq": 3,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=2",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "enabled": true
+          }
+        ],
+        "params": [
+          {
+            "name": "type",
+            "value": "2",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{\"wxid\": \"filehelper\",\"msg\": \"test\"}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "topMsg",
+      "seq": 14,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=51",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "enabled": true
+          }
+        ],
+        "params": [
+          {
+            "name": "type",
+            "value": "51",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{\"wxid\": 1222222, \"msgid\": 123}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "unhookLog",
+      "seq": 20,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=37",
+        "method": "POST",
+        "headers": [],
+        "params": [
+          {
+            "name": "type",
+            "value": "37",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "text",
+          "text": "{}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "unhookSyncMsg",
+      "seq": 7,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=10",
+        "method": "POST",
+        "headers": [],
+        "params": [
+          {
+            "name": "type",
+            "value": "10",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "text",
+          "text": "{}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "userInfo",
+      "seq": 2,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=1",
+        "method": "POST",
+        "headers": [],
+        "params": [
+          {
+            "name": "type",
+            "value": "1",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "verifyApply",
+      "seq": 35,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=23",
+        "method": "POST",
+        "headers": [],
+        "params": [
+          {
+            "name": "type",
+            "value": "23",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{\n    \"v3\": \"encryptUsernameValue\",\n    \"v4\": \"ticketc\",\n    \"type\": 8,\n    \"permission\": 3\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "hookImg",
+      "seq": 39,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=11",
+        "method": "POST",
+        "headers": [],
+        "params": [
+          {
+            "name": "type",
+            "value": "11",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "UnhookMsg",
+      "seq": 40,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=12",
+        "method": "POST",
+        "headers": [],
+        "params": [
+          {
+            "name": "type",
+            "value": "12",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "HookVoice",
+      "seq": 41,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=13",
+        "method": "POST",
+        "headers": [],
+        "params": [
+          {
+            "name": "type",
+            "value": "13",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "UnhookVoice",
+      "seq": 42,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=14",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "DeleteFriend",
+      "seq": 43,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=17",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\"wxid\": \"12345678\"}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "SearchFriend",
+      "seq": 44,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=17",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\"keyword\": \"keyword\"}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "addMember",
+      "seq": 12,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=28",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "enabled": true
+          }
+        ],
+        "params": [
+          {
+            "name": "type",
+            "value": "28",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{\"memberId\": \"memberId\",\"chatRoomId\": \"123@chatroom\"}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "GetMemberNickname",
+      "seq": 43,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=26",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\"memberId\": \"memberId\",\"chatRoomId\": \"123@chatroom\"}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "DeleteMember",
+      "seq": 44,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=27",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\"memberId\": \"memberId\",\"chatRoomId\": \"123@chatroom\"}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "AddFriend",
+      "seq": 45,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=20",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\"wxid\": \"12345678\"}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "ModifyRoomName",
+      "seq": 46,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=31",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\"wxid\": \"wxid\",\"chatRoomId\": \"123@chatroom\",\"nickName\": \"nickName\"}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "OCR",
+      "seq": 47,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=49",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\"imagePath\": \"D:\\\\Pic\\\\111.pic\"}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "Pat",
+      "seq": 48,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=50",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\"wxid\": \"wxid\",\"chatRoomId\": \"123@chatroom\"}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "Logout",
+      "seq": 49,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=44",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "QueryNickname",
+      "seq": 50,
+      "request": {
+        "url": "http://127.0.0.1:19088/api/?type=55",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\"id\": \"id\"}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    }
+  ],
+  "environments": [],
+  "brunoConfig": {
+    "version": "1",
+    "name": "Wechat Hook 39223",
+    "type": "collection",
+    "ignore": [
+      "node_modules",
+      ".git"
+    ]
+  }
+}
